@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  width: 90vw;
+  grid-template-columns: 5fr repeat(4, 1fr);
+  column-gap: 20px;
+  transition: grid 0.7s ease-in;
+}
+
+.container.active-0 {
+  grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+}
+
+.container.active-1 {
+  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+}
+
+.container.active-2 {
+  grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+}
+
+.container.active-3 {
+  grid-template-columns: 1fr 1fr 1fr 5fr 1fr;
+}
+
+.container.active-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 5fr;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+}

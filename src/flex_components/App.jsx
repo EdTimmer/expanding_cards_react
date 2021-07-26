@@ -31,7 +31,7 @@ const App = () => {
       title: 'Mountains - Clouds'
     }
   ];
-
+  
   return (
     <div className="container">
       {
