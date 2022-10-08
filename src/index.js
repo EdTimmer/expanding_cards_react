@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './flex_components/App';
-import App from './grid_components/App.grid';
+import App from './flex_components/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
